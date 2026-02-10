@@ -38,6 +38,7 @@ public class BasePage {
             WebElement tmpElement = (new WebDriverWait(driver, time)).until(ExpectedConditions.visibilityOf(element));
             return true;
         }catch (Exception ex){
+            System.out.println("Exception: " + ex.getCause());
             return false;
         }
 

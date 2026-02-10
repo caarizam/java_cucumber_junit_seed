@@ -14,14 +14,14 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    @FindBy(how = How.CLASS_NAME, using = "logo")
+    @FindBy(how = How.TAG_NAME, using = "header")
     private WebElement logoImg;
 
     @FindBy(how = How.CLASS_NAME, using = "menu_ppal")
     private List<WebElement> menuList;
 
     public boolean isPageLoaded(){
-        return waitForElement(this.driver, 30, this.logoImg);
+        return isElementDisplayed(this.driver, this.logoImg, 30, 3);
     }
 
     public List<String> getListMenu(){

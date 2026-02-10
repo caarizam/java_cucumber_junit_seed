@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: org.aut.tests.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 20.053 sec <<< FAILURE!
+Given The user is on the Home Page(Scenario: example scenario)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: The page is not loaded expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.aut.steps.definition.HomeSteps.theUserIsOnTheHomePage(HomeSteps.java:28)
+	at ?.Given The user is on the Home Page(SampleE2E.feature:5)
+
+Scenario: example scenario  Time elapsed: 0.017 sec  <<< FAILURE!
+java.lang.AssertionError: The page is not loaded expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.aut.steps.definition.HomeSteps.theUserIsOnTheHomePage(HomeSteps.java:28)
+	at ?.Given The user is on the Home Page(SampleE2E.feature:5)
+

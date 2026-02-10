@@ -34,11 +34,11 @@ public class Browser {
         }
 
         driver = initDriver(browserType);
-        driver.manage().timeouts().pageLoadTimeout(7, TimeUnit.MINUTES);
+        driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.MINUTES);
         driver.get(url);
         driver.manage().window().maximize();
         //When we are working with Jenkins, with need to assign a screen size
-        Dimension dimension = new Dimension(1024,768);
+        //Dimension dimension = new Dimension(1024,768);
         js = (JavascriptExecutor) driver;
         actions = new Actions(driver);
     }

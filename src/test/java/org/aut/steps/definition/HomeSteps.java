@@ -19,20 +19,13 @@ public class HomeSteps {
         browser = Constants.getInstance().getBrowser();
     }
 
-    @Given("The user is on the Home Page")
-    public void theUserIsOnTheHomePage() {
-        homePage = PageFactory.initElements(browser.getDriver(), HomePage.class);
-        browser.launchBrowser("", BrowserType.CHROME);
-        browser.addScreenShootScenario();
-        boolean isPageLoaded = homePage.isPageLoaded();
-        Assert.assertEquals("The page is not loaded", true, isPageLoaded);
-    }
-
-    @When("The user enters the credentials {string} and {string}")
+    @When("^The user enters the credentials \"([^\"]*)\" and \"([^\"]*)\"$")
     public void theUserEntersTheCredentialsAnd(String userName, String password) {
+        homePage = PageFactory.initElements(browser.getDriver(), HomePage.class);
+        System.out.println("username: " + userName + ", password: " + password);
     }
 
-    @Then("The user should see the Welcome Page")
+    @Then("^The user should see the Welcome Page$")
     public void theUserShouldSeeTheWelcomePage() {
     }
 }

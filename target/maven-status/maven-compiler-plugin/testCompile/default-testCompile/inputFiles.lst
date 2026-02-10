@@ -1,0 +1,10 @@
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\pages\BasePage.java
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\pages\HomePage.java
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\dto\UserDto.java
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\tests\runner\TestRunner.java
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\common\Browser.java
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\common\BrowserType.java
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\common\Constants.java
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\helpers\PropertiesReaderHelper.java
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\steps\definition\HomeSteps.java
+D:\dev\automation_testing\java_cucumber_junit_seed\src\test\java\org\aut\steps\hooks\Hooks.java
